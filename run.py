@@ -31,6 +31,7 @@ def init():
                 break
             else:
                 continue
-
-
+    globals.word_to_guess = helper.get_computer_word(difficultly)
+    print(globals.word_to_guess)
+                
 init()
