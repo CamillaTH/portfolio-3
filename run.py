@@ -11,12 +11,16 @@ def init():
     # create instance of globlas class 
     globals = Globals()
 
+    # take input from the user what game mode
+    # and validate it re-run until user enter correct input
     while True:
         game_mode = input(
-            "Welcome to hangman! For multiplayer (your friend chooses a word) press 1 for singleplayer (computer chooses word) press 2 :\n")
+            "Welcome to hangman! For multiplayer (your friend chooses a word) "
+            "press 1 for single-player press 2 (computer chooses word):\n")
         if helper.validate_game_choices(game_mode):
             break
         else:
             continue
     
+
 init()
