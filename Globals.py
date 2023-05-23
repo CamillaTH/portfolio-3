@@ -9,4 +9,5 @@ class Globals:
     guesses = 0
     # letters that the user have guessed
     guessed_letters = []
-    
+    # the word the user is guessing
+    word_to_guess = ""
