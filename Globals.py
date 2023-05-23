@@ -7,3 +7,6 @@ class Globals:
     max_guesses = 8
     # the amount of guesses the user have guessed
     guesses = 0
+    # letters that the user have guessed
+    guessed_letters = []
+    
