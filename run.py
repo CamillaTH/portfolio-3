@@ -8,6 +8,8 @@ def init():
 
     # create instance of HangmanHelper class to be able to use helper functions
     helper = HangmanHelper()
+    # create instance of globlas class 
+    globals = Globals()
 
     while True:
         game_mode = input(
