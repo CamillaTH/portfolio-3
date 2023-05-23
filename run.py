@@ -22,5 +22,15 @@ def init():
         else:
             continue
     
+    # if game_mode is 2 take input from the user which difficultly 
+    # and validate it re-run until user enter correct input
+    if int(game_mode) == 2:
+        while True:
+            difficultly = input("Please choose difficultly. Press 1 for easy 2 for hard:\n")
+            if helper.validate_game_choices(difficultly):
+                break
+            else:
+                continue
+
 
 init()
