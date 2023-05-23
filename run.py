@@ -6,10 +6,15 @@ def init():
     Function thats init the program and starts the game
     """
 
-    # create instance of Drawings class to be able to visually show the user how many guesses there are left.
+    # create instance of HangmanHelper class to be able to use helper functions
     helper = HangmanHelper()
 
-    game_mode = input("Welcome to hangman! For multiplayer (your friend chooses a word) press 1 for singleplayer (computer chooses word) press 2 :\n")
-    
+    while True:
+        game_mode = input(
+            "Welcome to hangman! For multiplayer (your friend chooses a word) press 1 for singleplayer (computer chooses word) press 2 :\n")
+        if helper.validate_game_choices(game_mode):
+            break
+        else:
+            continue
     
 init()
