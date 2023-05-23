@@ -16,5 +16,15 @@ class HangmanHelper:
         except ValueError as ve:
             print(f"Invalid input: {ve}, try again.\n")
             return False
-            
+
         return True
+
+    @staticmethod
+    def get_computer_word(difficultly):
+        """
+       Gets a random word from the easy or hard .txt list.
+       When the user puts 1 as input the function gets the easy
+       word list and when the user chooses 2 the hard word list
+       :param difficultly:
+       :return String:
+       """
