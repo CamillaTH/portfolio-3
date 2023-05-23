@@ -44,4 +44,4 @@ class HangmanHelper:
         # shuffle the list before picking a word from the list
         random.shuffle(words_list)
 
-        return random.choice(words_list)
+        return random.choice(words_list).upper()
