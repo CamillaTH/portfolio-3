@@ -30,3 +30,18 @@ class HangmanHelper:
        :param difficultly:
        :return String:
        """
+        
+        if int(difficultly) == 1:
+            file_path = "words/hangman_words_easy.txt"
+        else:
+            file_path = "words/hangman_words_hard.txt"
+
+        words_list = []
+        with open(file_path) as word_file:
+            for word in word_file:
+                words_list.append(word)
+
+        # shuffle the list before picking a word from the list
+        random.shuffle(words_list)
+
+        return random.choice(words_list)
