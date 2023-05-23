@@ -45,3 +45,12 @@ class HangmanHelper:
         random.shuffle(words_list)
 
         return random.choice(words_list).upper()
+
+    @staticmethod
+    def validate_players_word_choice(word):
+        """
+       checks if input has no blank spaces is between 
+       3 and 12 chars and alphabetic if not raise ValueError
+       :param word:
+       :return: true if validates else false
+       """
