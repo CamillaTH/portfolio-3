@@ -70,6 +70,14 @@ class HangmanHelper:
         return True
 
     @staticmethod
+    def validate_players_letter_choice(letter):
+        """
+       checks if input is char and alphabetic if or word already ben guessed if not raise ValueError
+       :param letter:
+       :return: true if validates else false
+       """
+
+    @staticmethod
     def resolve_chars_to_show():
         """
        resolves witch chars to show in the underscore string
