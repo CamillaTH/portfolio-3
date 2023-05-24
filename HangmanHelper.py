@@ -1,4 +1,6 @@
 import random
+from Globals import Globals
+
 
 class HangmanHelper:
     """
