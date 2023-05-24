@@ -29,9 +29,10 @@ def init():
             difficultly = input("Please choose difficultly. Press 1 for easy 2 for hard:\n")
             if helper.validate_game_choices(difficultly):
                 break
-            else:
-                continue
-    globals.word_to_guess = helper.get_computer_word(difficultly)
-    print(globals.word_to_guess)
-                
+            continue
+        globals.word_to_guess = helper.get_computer_word(difficultly)
+    
+    
+
+       
 init()
