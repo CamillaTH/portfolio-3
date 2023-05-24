@@ -54,3 +54,15 @@ class HangmanHelper:
        :param word:
        :return: true if validates else false
        """
+        try:
+            if " " in word:
+                raise ValueError("Word can't have blank spaces")
+            if not word.isalpha():
+                raise ValueError("Word needs to be Alphabetic")
+            if len(word) < 3 or len(word) > 12:
+                raise ValueError("Word needs to be between 3 and 12 chars")
+        except ValueError as ve:
+            print(f"Invalid input: {ve}, try again.\n")
+            return False
+
+        return True
