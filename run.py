@@ -32,7 +32,16 @@ def init():
             continue
         globals.word_to_guess = helper.get_computer_word(difficultly)
     
-    
-
+    # if game_mode is 1 take input from the user which
+    # word the other use should guess
+    else:
+        while True:
+            globals.word_to_guess = input(
+                "Now your friend have to write a word for you to guess (min 3 chars, max 12 chars, "
+                "no blank spaces) :\n").upper()
+            if helper.validate_players_word_choice(globals.word_to_guess):
+                break
+            continue
+   
        
 init()
