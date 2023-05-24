@@ -8,8 +8,6 @@ def init():
 
     # create instance of HangmanHelper class to be able to use helper functions
     helper = HangmanHelper()
-    # create instance of globlas class 
-    globals = Globals()
 
     # take input from the user what game mode
     # and validate it re-run until user enter correct input
@@ -30,16 +28,16 @@ def init():
             if helper.validate_game_choices(difficultly):
                 break
             continue
-        globals.word_to_guess = helper.get_computer_word(difficultly)
+        Globals.word_to_guess = helper.get_computer_word(difficultly)
     
     # if game_mode is 1 take input from the user which
     # word the other use should guess
     else:
         while True:
-            globals.word_to_guess = input(
+            Globals.word_to_guess = input(
                 "Now your friend have to write a word for you to guess (min 3 chars, max 12 chars, "
                 "no blank spaces) :\n").upper()
-            if helper.validate_players_word_choice(globals.word_to_guess):
+            if helper.validate_players_word_choice(Globals.word_to_guess):
                 break
             continue
    
