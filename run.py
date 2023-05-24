@@ -1,6 +1,7 @@
 from Globals import Globals
 from HangmanHelper import HangmanHelper
 
+
 def init():
     """
     Function thats init the program and starts the game
@@ -40,6 +41,9 @@ def init():
             if helper.validate_players_word_choice(Globals.word_to_guess):
                 break
             continue
-   
-       
+    # print the amount of chars in the word as underscore for the user
+    print(helper.resolve_chars_to_show())
+    print("Now let's guess! \n")
+
+
 init()
