@@ -44,6 +44,13 @@ def init():
     # print the amount of chars in the word as underscore for the user
     print(helper.resolve_chars_to_show())
     print("Now let's guess! \n")
+    
+    while True:
+        user_guess = input("Type a letter\n").upper()
+        if not helper.validate_players_letter_choice(user_guess):
+            continue
+        # add the guessed letter to GUESSED_LETTERS list
+        Globals.guessed_letters.append(user_guess)
 
 
 init()
