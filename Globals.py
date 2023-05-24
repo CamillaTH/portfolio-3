@@ -11,3 +11,45 @@ class Globals:
     guessed_letters = []
     # the word the user is guessing
     word_to_guess = ""
+    # string array that holds the stages visually with 8 stages
+    hangman_drawings = ['''
+                  ______
+                 |
+                 |
+                 |
+                 ''', '''
+                  ______
+                 |     |
+                 |     
+                 |  
+                   ''', '''
+                  ______
+                 |     0
+                 |     
+                 |
+                   ''', '''
+                  ______
+                 |     0
+                 |     |
+                 |     
+                   ''', '''
+                  ______
+                 |     0
+                 |     |--
+                 | 
+                   ''', '''
+                  ______
+                 |     0
+                 |   --|--
+                 |   
+                   ''', '''
+                  ______
+                 |     0
+                 |   --|--
+                 |     |
+                   ''', '''
+                  ______
+                 |     0
+                 |   --|--
+                 |    | |  
+                   ''']
