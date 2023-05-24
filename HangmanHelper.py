@@ -81,6 +81,9 @@ class HangmanHelper:
                 raise ValueError("Letter needs to be Alphabetic")
             if len(letter) > 1:
                 raise ValueError("Letter needs to be a single letter")
+            if letter in Globals.guessed_letters:
+                raise ValueError("You have already guessed that "
+                "letter choose another one!")
         except ValueError as ve:
             print(f"Invalid input: {ve}, try again.\n")
             return False
