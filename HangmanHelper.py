@@ -76,6 +76,16 @@ class HangmanHelper:
        :param letter:
        :return: true if validates else false
        """
+        try:
+            if not letter.isalpha():
+                raise ValueError("Letter needs to be Alphabetic")
+            if len(letter) > 1:
+                raise ValueError("Letter needs to be a single letter")
+        except ValueError as ve:
+            print(f"Invalid input: {ve}, try again.\n")
+            return False
+
+        return True
 
     @staticmethod
     def resolve_chars_to_show():
