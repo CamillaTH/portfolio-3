@@ -55,6 +55,21 @@ def init():
             print(helper.resolve_chars_to_show())
             print("You won, you guessed the right word!\n")
             break
+        # if true user have not exceeded max guesses
+        if Globals.guesses < Globals.max_guesses:
+            # the guessed char is not a part of the word to guess
+            if user_guess not in Globals.word_to_guess:
+                # increment number of guesses by 1
+                Globals.guesses = Globals.guesses + 1
+            else:
+                # user gussed the correct char
+                print(f"The letter {user_guess} is correct!")
+            print(f"You have {Globals.max_guesses - Globals.guesses} guesses left\n")
+            # show the user how many wrong guesses visually
+            print(Globals.hangman_drawings[Globals.guesses])
+            print(helper.resolve_chars_to_show())
+            print("_______________________________________\n")
+            continue
 
 
 init()
