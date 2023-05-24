@@ -51,6 +51,10 @@ def init():
             continue
         # add the guessed letter to GUESSED_LETTERS list
         Globals.guessed_letters.append(user_guess)
+        if helper.resolve_chars_to_show() == Globals.word_to_guess:
+            print(helper.resolve_chars_to_show())
+            print("You won, you guessed the right word!\n")
+            break
 
 
 init()
