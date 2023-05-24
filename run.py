@@ -70,6 +70,10 @@ def init():
             print(helper.resolve_chars_to_show())
             print("_______________________________________\n")
             continue
+        # user exceeded nr of guesses game ends
+        else:
+            print("You are hanged! Better luck next time!\n")
+            break
 
 
 init()
