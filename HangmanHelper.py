@@ -68,3 +68,11 @@ class HangmanHelper:
             return False
 
         return True
+
+    @staticmethod
+    def resolve_chars_to_show():
+        """
+       resolves witch chars to show in the underscore string
+       :return: string
+       """
+        return "".join([char if char in Globals.guessed_letters else "_" for char in Globals.word_to_guess])
