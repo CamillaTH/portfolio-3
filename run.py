@@ -72,7 +72,6 @@ def init():
                 print("You are hanged! Better luck next time!\n")
                 break
             print("_______________________________________\n")
-            continue
 
 
 init()
