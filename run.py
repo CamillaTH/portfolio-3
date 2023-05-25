@@ -66,14 +66,13 @@ def init():
                 print(f"The letter {user_guess} is correct!")
             print(f"You have {Globals.max_guesses - Globals.guesses} guesses left\n")
             # show the user how many wrong guesses visually
-            print(Globals.hangman_drawings[Globals.guesses])
+            print(Globals.hangman_drawings[Globals.guesses-1])
             print(helper.resolve_chars_to_show())
+            if Globals.guesses == Globals.max_guesses:
+                print("You are hanged! Better luck next time!\n")
+                break
             print("_______________________________________\n")
             continue
-        # user exceeded nr of guesses game ends
-        else:
-            print("You are hanged! Better luck next time!\n")
-            break
 
 
 init()
