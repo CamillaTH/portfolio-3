@@ -65,8 +65,9 @@ def init():
                 # user gussed the correct char
                 print(f"The letter {user_guess} is correct!")
             print(f"You have {Globals.max_guesses - Globals.guesses} guesses left\n")
-            # show the user how many wrong guesses visually
-            print(Globals.hangman_drawings[Globals.guesses-1])
+            if Globals.guesses < 8:
+                # show the user how many wrong guesses visually
+                print(Globals.hangman_drawings[Globals.guesses])
             print(helper.resolve_chars_to_show())
             # max guesses is achieved end program 
             if Globals.guesses == Globals.max_guesses:
