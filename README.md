@@ -4,6 +4,7 @@
 Hangman is a python3 terminal project that let the user or users play the game hangman.
 
 <b>Program features:</b>
+
  Program first let the user choose game mode, if the user write in 1 it's multiplayer game mode. if the input is not 1 or 2 validation is applied so the program will re ask for input until the input is 1 or 2. With multiplayer game mode the program then asks the user for a word for the other user to guess. The word have to be at least 3 chars and max 12 chars. Validation is applied if the user try to input less than 3 chars or more than 12 or if the word contains illegal non alphabetic charachters like 4 or ! etc.
 
  If the user instead write in 2 the user chooses singleplayer game mode. In this game mode the computer will randomly choose a word for you. So when choosing this game mode the program then asks the user what difficultly the user want. If the user choose 1 the program will randomly choose a word from a file with easy words. If the user choose 2  the program will randomly choose a word from a file with hard words. 
