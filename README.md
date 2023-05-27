@@ -1,9 +1,5 @@
 <b>Hangman game</b>
-                  _____
-                 |     0
-                 |   --|--
-                 |    | | 
-
+           
 
 Hangman is a python3 terminal project that let the user or users play the game hangman.
 
@@ -23,14 +19,18 @@ https://camillath-portfolio-3-hangman.herokuapp.com/
 To <b>run the program</b> click on the link above
 
 <b>Dependencies:</b>
+
 No external dependencies like ouath or google sheets is required.
 
 <b>Libs:</b>
+
 Libs that are used : random
 
 <b>credit:</b>
+
 Inspiration taken from the classic game hangman that you often played in school on the whiteboard.
 
 <b>Bugs:</b>
+
 There are no known bugs. But some bugs where discovered and fixed during development.
 
