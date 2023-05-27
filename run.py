@@ -72,6 +72,7 @@ def init():
             # max guesses is achieved end program 
             if Globals.guesses == Globals.max_guesses:
                 print(Globals.hangman_drawings[Globals.guesses-1])
+                print(f"The word was {Globals.word_to_guess}\n")
                 print("You are hanged! Better luck next time!\n")
                 break
             print("_______________________________________\n")
