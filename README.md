@@ -34,3 +34,9 @@ Inspiration taken from the classic game hangman that you often played in school 
 
 There are no known bugs. But some bugs where discovered and fixed during development.
 
+<b>Validation:</b>
+
+The program validates the user input and raises error if the user input is not legal.
+
+<b>Testing:</b>
+Program is well tested the be able to handle sceanrios where the user inputs wrong values.
