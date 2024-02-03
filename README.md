@@ -87,6 +87,44 @@ The program validates the user input and raises error if the user input is not l
 * After Obtaining the maximum allowed guesses, the program displays the correct word and asks if you want to play again
 * Program exits
 
+#### Test Case 3: multiplayer, run again 
+##### Input:
+
+* Select single multiplayer mode by entering 1.
+* Other player enters word "rabbit"
+* select 1 when correct word is entered
+
+##### Expected Output:
+
+* The program initializes with the word "rabbit"
+* The program prompts you to guess letters.
+* User guesses the correct word
+* The program displays the correct word and asks if you want to play again
+* Program restarts
+
+#### Test Case 4: multiplayer , incorrect input
+##### Input:
+
+* Select single multiplayer mode by entering 1.
+* Other player enters word "ab"
+* Other player enters word "654flower"
+* Other player enters word "flower"
+* Guessing player enters letter "1"
+* Guessing player enters letter "fa"
+* Guessing player enters correct letters
+* Guessing player enters 2
+
+
+##### Expected Output:
+
+* The program promts the user to choose a word between 3 and 12 chars and asks to try again
+* The program promts the user to only enter Alphabetic 
+* The program prompts you to guess letters
+* The program promts the user to choose a Alphabetic letter asks to try again
+* The program promts the user to choose a single letter and asks to try again
+* The program displays the correct word and asks if you want to play again
+* Program exits
+
 
 ## Credits
 * Inspiration taken from the classic game hangman that you often played in school on the whiteboard.
