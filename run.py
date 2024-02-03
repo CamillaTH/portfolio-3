@@ -54,8 +54,19 @@ def init():
         Globals.guessed_letters.append(user_guess)
         if helper.resolve_chars_to_show() == Globals.word_to_guess:
             print(helper.resolve_chars_to_show())
-            print("You won, you guessed the right word!\n")
-            break
+            #print("You won, you guessed the right word!\n")
+            while True:
+                run_again = input(
+                "You won, you guessed the right word!\n "
+                "Press 1 to run the game again and press 2 to exit the game:\n")
+
+                if helper.validate_game_choices(run_again):
+                    if helper.resolve_rerun_game(run_again):
+                        init()
+                    else:
+                        sys.exit()
+                else:
+                    continue
         # if true user have not exceeded max guesses
         if Globals.guesses < Globals.max_guesses:
             # the guessed char is not a part of the word to guess
@@ -78,14 +89,12 @@ def init():
 
                 while True:
                     run_again = input(
-                    "You are hanged! Better luck next time! "
+                    "You are hanged! Better luck next time!\n"
                     "Press 1 to run the game again and press 2 to exit the game:\n")
 
                     if helper.validate_game_choices(run_again):
-                        # Rerun game
-                        if run_again == '1':
+                        if helper.resolve_rerun_game(run_again):
                             init()
-                        #exit game
                         else:
                             sys.exit()
                     else:

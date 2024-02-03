@@ -97,3 +97,16 @@ class HangmanHelper:
        :return: string
        """
         return "".join([char if char in Globals.guessed_letters else "_" for char in Globals.word_to_guess])
+
+    @staticmethod
+    def resolve_rerun_game(run_again):
+        """
+       resolves if the user want to rerun the game or exit the game 1 for rerun 2 for exit
+       :return: boolean 
+       """
+        # Rerun game
+        if int(run_again) == 1:
+            return True
+        #exit game
+        else:
+            return False
