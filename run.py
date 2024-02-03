@@ -1,5 +1,6 @@
 from Globals import Globals
 from HangmanHelper import HangmanHelper
+import sys
 
 
 def init():
@@ -73,9 +74,21 @@ def init():
             if Globals.guesses == Globals.max_guesses:
                 print(Globals.hangman_drawings[Globals.guesses-1])
                 print(f"The word was {Globals.word_to_guess}\n")
-                print("You are hanged! Better luck next time!\n")
-                break
-            print("_______________________________________\n")
+                print("_______________________________________\n")
 
+                while True:
+                    run_again = input(
+                    "You are hanged! Better luck next time! "
+                    "Press 1 to run the game again and press 2 to exit the game:\n")
+
+                    if helper.validate_game_choices(run_again):
+                        # Rerun game
+                        if run_again == '1':
+                            init()
+                        #exit game
+                        else:
+                            sys.exit()
+                    else:
+                        continue
 
 init()
