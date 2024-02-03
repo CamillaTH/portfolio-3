@@ -2,7 +2,7 @@
 
 ![alt text](images/readme-coverphoto.png)
 
-## Hangman is a python3 terminal project that let the user or users play the game hangman.
+# Hangman is a python3 terminal project that let the user or users play the game hangman.
 
 
 ## Program features
@@ -36,8 +36,8 @@ To <b>run the program</b> click on the link above
 
 ## Dependencies:
  * python 3
-### External dependencies:
-     * No external dependencies are required to run this program
+### External dependencies: 
+ * No external dependencies are required to run this program
 
 
 ### Libs:
@@ -55,7 +55,37 @@ The program validates the user input and raises error if the user input is not l
 
 ## Testing:
 
-Program is well tested the be able to handle sceanrios where the user inputs wrong values.
+### Test cases: 
+
+#### Test Case 1: Single Player Mode easy, play again
+##### Input:
+
+* Select single single-player mode by entering 2.
+* Select difficulty level by entering 1 for easy.
+* select 1 when obtaining maximum allowed guesses
+
+##### Expected Output:
+
+* The program initializes with a word selected by the computer.
+* The word should be from the "hangman_words_easy.txt" list
+* The program prompts you to guess letters.
+* After Obtaining the maximum allowed guesses, the program displays the correct word and asks if you want to play again
+* Program restarts
+
+#### Test Case 2: Single Player Mode hard, exit game 
+##### Input:
+
+* Select single single-player mode by entering 2.
+* Select difficulty level by entering 2 for easy.
+* select 2 when obtaining maximum allowed guesses
+
+##### Expected Output:
+
+* The program initializes with a word selected by the computer.
+* The word should be from the "hangman_words_hard.txt" list
+* The program prompts you to guess letters.
+* After Obtaining the maximum allowed guesses, the program displays the correct word and asks if you want to play again
+* Program exits
 
 
 ## Credits
