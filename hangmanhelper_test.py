@@ -1,6 +1,14 @@
-import hangmanhelper
 import unittest
+from HangmanHelper import HangmanHelper
+from unittest.mock import patch
+
 
 class HangmanHelperTestFunctions(unittest.TestCase):
 
-    pass
+    def test_validate_game_choices_valid_input(self):
+        self.assertTrue(HangmanHelper.validate_game_choices("1"))
+        self.assertTrue(HangmanHelper.validate_game_choices("2"))
+
+    def test_validate_game_choices_invalid_input(self):
+         with patch('builtins.input', side_effect=["3"]):
+             self.assertFalse(HangmanHelper.validate_game_choices("3"))
