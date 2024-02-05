@@ -21,6 +21,36 @@ The project is deployed at the platform Heroku at the following link:
 
 https://camillath-portfolio-3-hangman.herokuapp.com/
 
+### Deployment process
+
+
+* Login to heroku (https://id.heroku.com/login)
+
+* click new -> create new app  
+
+![alt text](images/readme-heroku-newapp.png) 
+
+* Choose app name and region
+
+![alt text](images/readme-heroku-create-new-app.png) 
+
+
+* Choose "Github" as deployment method and search desired github project and click "connect"
+
+![alt text](images/readme-heroku-deployment-method.png) 
+
+* Go to "settings" tab and in "buildpacks" section add heroku/python (shuld be pre selected) and heroku/nodejs
+
+![alt text](images/readme-heroku-settingsbuildpacks.png) 
+
+* Go back to "deploy" tab choose desired branch and click "deploy branch"
+
+![alt text](images/readme-heroku-deploybranch.png) 
+
+* click viewlog and looks that everything looks ok, heroku will print out the deployed URL in the end of the log.
+
+![alt text](images/readme-heroku-deploy-log.png) 
+
 ### clone repository locally (HTTPS)
 
 * Navigate to the repository (https://github.com/CamillaTH/portfolio-3)
