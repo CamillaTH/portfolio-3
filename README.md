@@ -15,6 +15,8 @@
 
  * When game mode is choosen the program will show the amount of chars the letter have by replaceing the letter with an underscore. Then the program will ask the user for to guess on letter at the time. Validation is applied that checks if the user input is a single letter and its alphabetic and that the letter have not already been guessed. If the guessed letter is not a part of the word to guess the program will count down the amount of guesses the user have that starts at 8. It will also visually show a hanged person with the correspondeing stages depending on what stage of the game the user are at. If the guessed letter is a part of the word to guess the progream will not count down the amount of guesses and it will reaveal the letters by replaceing the underscore with the letter/s. If the amount of guesses is 0 the program will reveal what the word was and the program ends.
 
+ * When user wins or loose they can choose to play again or exit the game.
+
 ## Deployment:
 
 The project is deployed at the platform Heroku at the following link:
