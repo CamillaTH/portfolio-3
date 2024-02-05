@@ -72,8 +72,19 @@ To <b>run the program</b> click on the link above
 
 ### Libs:
 
-Libs that are used : random
+#### Libs that are used : random, builtins, sys
+ 
+ ##### Usage of random
+ * Use the function "shuffle()" that shuffles the txt lists with words to guess list "words/hangman_words_easy.txt" or "words/hangman_words_hard.txt".
+ * After list is shuffeld use the "choice()" function that picks a random word from the shuffeled list.
 
+  ##### Usage of builtins
+ * Use the "open()" function to read the file "words/hangman_words_easy.txt" or "words/hangman_words_hard.txt".
+ * Use to raise errors such as "valueError"
+ 
+##### Usage of sys
+ * Usage of the "exit()" function to exit the program.
+ 
 
 ## Bugs:
 
