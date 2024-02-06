@@ -74,7 +74,7 @@ To <b>run the program</b> click on the link above
 
 ### Libs:
 
-#### Libs that are used : random, builtins, sys
+#### Libs that are used : random, builtins, sys, unittest
  
  ##### Usage of random
  * Use the function "shuffle()" that shuffles the txt lists with words to guess list "words/hangman_words_easy.txt" or "words/hangman_words_hard.txt".
@@ -86,6 +86,9 @@ To <b>run the program</b> click on the link above
  
 ##### Usage of sys
  * Usage of the "exit()" function to exit the program.
+
+#### Usage of unittest
+ * Uses unittest lib to create tests (unittest.TestCase) and use functions like assertTrue, assertFalse
  
 
 ## Bugs:

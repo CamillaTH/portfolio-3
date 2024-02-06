@@ -51,3 +51,17 @@ class HangmanHelperTestFunctions(unittest.TestCase):
          Should return True since b is valid and not already guessed
          """
         self.assertTrue(HangmanHelper.validate_players_letter_choice("b"))
+
+    def test_resolve_rerun_game_exit(self):
+        """
+        Tests that resolves rerun of game input
+        Should return False since input 2 is exit game
+        """
+        self.assertFalse(HangmanHelper.resolve_rerun_game(2))
+
+    def test_resolve_rerun_game_rerun(self):
+        """
+        Tests that resolves rerun of game input
+        Should return True since input 1 is rerun game
+        """
+        self.assertTrue(HangmanHelper.resolve_rerun_game(1))

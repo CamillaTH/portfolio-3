@@ -77,7 +77,6 @@ class HangmanHelper:
        :return: true if validates else false
        """
         try:
-            print("hello " + letter)
             if not letter.isalpha():
                 raise ValueError("Letter needs to be Alphabetic")
             if len(letter) > 1:
@@ -88,7 +87,6 @@ class HangmanHelper:
         except ValueError as ve:
             print(f"Invalid input: {ve}, try again.\n")
             return False
-        print("truee")
         return True
 
     @staticmethod
@@ -105,6 +103,12 @@ class HangmanHelper:
        resolves if the user want to rerun the game or exit the game 1 for rerun 2 for exit
        :return: boolean 
        """
+        try:
+            if int(run_again) != 1 and int(run_again) != 2:
+                raise ValueError("input needs to be 1 or 2!")
+        except ValueError as ve:
+            print(f"Invalid input: {ve}, try again.\n")
+            return False
         # Rerun game
         if int(run_again) == 1:
             return True
