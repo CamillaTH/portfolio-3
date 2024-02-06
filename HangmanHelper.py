@@ -77,6 +77,7 @@ class HangmanHelper:
        :return: true if validates else false
        """
         try:
+            print("hello " + letter)
             if not letter.isalpha():
                 raise ValueError("Letter needs to be Alphabetic")
             if len(letter) > 1:
@@ -87,7 +88,7 @@ class HangmanHelper:
         except ValueError as ve:
             print(f"Invalid input: {ve}, try again.\n")
             return False
-
+        print("truee")
         return True
 
     @staticmethod
